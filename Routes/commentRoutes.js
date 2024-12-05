@@ -1,5 +1,5 @@
 import express from 'express';
-import { createComment, getComments, deleteComment } from '../controllers/commentController.js';
+import { createComment, getComments, deleteComment } from '../Controllers/commentController.js';
 import { protect } from '../MiddleWare/authMiddleware.js';
 import { validateBody } from '../MiddleWare/validateInput.js';
 // import { commentSchema } from '../Utils/validationSchemas.js';

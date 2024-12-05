@@ -7,8 +7,8 @@ import apiLimiter from './MiddleWare/rateLimiter.js';
 // Import routes
 import authRoutes from './Routes/authRoutes.js';
 import postRoutes from './Routes/PostRoutes.js';
-import commentRoutes from './routes/commentRoutes.js';
-import likeRoutes from './routes/likeRoutes.js';
+import commentRoutes from './Routes/commentRoutes.js';
+import likeRoutes from './Routes/likeRoutes.js';
 
 // Initialize dotenv configuration
 dotenv.config();
@@ -37,7 +37,7 @@ app.use('/api/likes', likeRoutes);
 app.use(errorHandler);
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
